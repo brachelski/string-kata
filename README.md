@@ -20,18 +20,18 @@ Remember the steps
 
 1. Create add method on `StringCalculator.java` class that will take a String argument and return an int.
 2. Method can take 0, 1, or 2 numbers, and will return their sum.
-3. Example: `"" == 0`, `"1" == 1`, `"1,2" == 3`
-4. Empty String or Null returns 0.
-5. Allow add method to take an unknown amount of numbers that are comma delimited.
-6. Allow add method to handle new lines between numbers (instead of commas).
+   2. Empty String or Null returns 0.
+   1. Example: `"" == 0`, `"1" == 1`, `"1,2" == 3`
+3. Allow add method to take an unknown amount of numbers that are comma delimited.
+4. Allow add method to handle new lines between numbers (instead of commas).
    1. `"1\n2,3" == 6`
-7. Support different delimiters.
+5. Support different delimiters.
    1. `";\n1;2" == 3`
-8. Calling add with negative numbers throws IllegalArgumentException with message:
+6. Calling add with negative numbers throws IllegalArgumentException with message:
    1. `Negative numbers not allowed`
-9. If there are more than one negative numbers, list them in the exception message.
+7. If there are more than one negative numbers, list them in the exception message.
    1. Example: `"-1,-2,3,4,5"` `->` `Negative numbers not allowed: [-1, -2]`
-10. Numbers larger than 1000 will be ignored.
-    1. Example: `"1,2,3,1001,1002" == 6`
-11. White space is trimmed from numbers.
-    1. Example: `"1, 2, 3" == 6`
+8. Numbers larger than 1000 will be ignored.
+   1. Example: `"1,2,3,1001,1002" == 6`
+9. White space is trimmed from numbers.
+   1. Example: `"1, 2, 3" == 6`
