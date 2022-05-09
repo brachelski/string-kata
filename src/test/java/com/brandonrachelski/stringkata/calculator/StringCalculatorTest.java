@@ -20,6 +20,12 @@ class StringCalculatorTest {
 
     @Nested
     class add {
+        @Test
+        void shouldReturnIntegerForString() {
+            int actual = stringCalculator.add("2");
+            assertThat(actual, equalTo(2));
+        }
+
         @ParameterizedTest
         @NullAndEmptySource
         void shouldReturn0_whenCalledWithEmptyStringOrNull(String value) {
