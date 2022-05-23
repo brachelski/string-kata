@@ -11,14 +11,14 @@ Remember the steps
    1. You write the code that satisfies the test requirements
 3. refactor
    1. You find a more efficient and more readable way to write your code and tests!
- 
-**Remember to write *only code* that satisfies your test. Nothing more and nothing less.**
+
+**Remember to write *only* code that satisfies your test. Nothing more and nothing less.**
     
 ----------
 
 ##### Steps
 
-1. Create add method on `StringCalculator.java` class that will take a String argument and return an int.
+1. Create `add` method on `StringCalculator.java` class that will take a `String` argument and return an `int`.
 2. Method can take 0, 1, or 2 numbers, and will return their sum.
    2. Empty String or Null returns 0.
    1. Example: `"" == 0`, `"1" == 1`, `"1,2" == 3`
